@@ -76,6 +76,11 @@ JHtml::_('behavior.mootools');
 			<jdoc:include type="modules" name="bottom" style="xhtml" />
 			<br class="clearfix" />
 		</div>
+		
+		<div id="bottom-menu">
+			<jdoc:include type="modules" name="bottom-menu" style="xhtml" />
+			<br class="clearfix" />
+		</div>
 
 		<div id="footer">
 			<div>&copy; Copyright <span class="blue">Pro</span> Motion <span class="blue">Ads</span> <?php print date('Y'); ?></div>
