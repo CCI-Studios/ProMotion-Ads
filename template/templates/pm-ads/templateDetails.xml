@@ -28,8 +28,10 @@
 
 	<positions>
 		<position>header</position>
+		<position>masthead</position>
 		<position>bottom</position>
 		<position>footer</position>
+		<position>hidden</position>
 	</positions>
 
 	<config>
