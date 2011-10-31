@@ -13,6 +13,8 @@ Make sure the follow are installed for Capistrano deployment:
 1. run `git submodules initialize --update` to setup your repository
 1. begin editing the template and any other needed components
 
+## How to setup
+1. cap deploy:setup
+
 ## How to deploy
-1. 
-1. 
+1. cap deploy or cap production deploy

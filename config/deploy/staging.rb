@@ -2,7 +2,7 @@
 set :branch, "development"
 
 # This may be the same as your `Web` server
-role :app, "pro-motionads.com"
+role :app, "pro-motionads.ca"
 
 # directories
 set :deploy_to, "/home/pmads/subdomains/dev"
