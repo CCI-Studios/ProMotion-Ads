@@ -25,6 +25,7 @@ if ($_SERVER['SERVER_PORT'] === 8888 ||
 }
 
 $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
+JHtml::_('behavior.mootools');
 ?>
 
 <head>
@@ -98,6 +99,7 @@ $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 		<script src="/templates/<?= $this->template ?>/js/columns.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/dropmenu.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/html5.js"></script>
+		<script src="/templates/<?= $this->template ?>/js/rollover.js"></script>
 	<?php else: ?>
 		<script>
 			var _gaq=[["_setAccount","<?php echo $analytics?>"],["_trackPageview"]];
