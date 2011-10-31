@@ -54,24 +54,32 @@ $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 
 <body class="<?= $menu ?>">
 
-	<div id="wrapper">
-		<header>
-			<jdoc:include type="modules" name ="header" style="xhtml" />
-		</header>
-
-		<div id="main">
-			<aside>
-				<jdoc:include type="modules" name="left" style="xhtml" />
-			</aside>
-
-			<article>
-				<jdoc:include type="component" />
-			</article>
+	<div id="wrapper" class="hfeed">
+		<div id="top" class="clearfix">
+			<jdoc:include type="modules" name="header" style="xhtml" />
 		</div>
 
-		<footer>
-			<jdoc:include type="modules" name="footer" style="xhtml" />
-		</footer>
+		<div id="masthead" class="clearfix">
+			<jdoc:include type="modules" name="masthead" style="xhtml" />
+		</div>
+
+		
+		<div id="post-content" class="clearfix">
+			<jdoc:include type="component" />
+		</div>
+
+		<div id="bottom" class="clearfix">
+			<jdoc:include type="modules" name="bottom" style="xhtml" />
+		</div>
+
+		<div id="footer">
+			<div>&copy; Copyright <span class="blue">Pro</span> Motion <span class="blue">Ads</span> <?php print date('Y'); ?></div>
+			<div>Site By <a href="http://www.ccistudios.com" target="_blank">CCI Studios</a></div>
+
+			<div class="right">
+				<jdoc:include type="modules" name="footer" style="xhtml" />
+			</div>
+		</div>
 	</div>
 
 	<div class="hidden">
