@@ -1,10 +1,10 @@
 # repository info
-set :branch, "BRANCH"
+set :branch, "development"
 
 # This may be the same as your `Web` server
-role :app, "ADDRESS"
+role :app, "pro-motionads.com"
 
 # directories
-set :deploy_to, "/home/ACCOUNT/subdomains/DOMAIN"
+set :deploy_to, "/home/pmads/subdomains/dev"
 set :public, "#{deploy_to}/public_html"
-set :extensions, %w[plg_ie6 public template]
+set :extensions, %w[public template]

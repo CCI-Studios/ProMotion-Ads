@@ -3,14 +3,14 @@ set :stages, %w(staging production)
 set :default_stage, "staging"
 require "capistrano/ext/multistage"
 
-set :application, "APPLICATION_NAME"
+set :application, "Pro Motion Ads"
 
 # repository info
-set :repository,  "git@github.com:CCI-Studios/PROJECT.git"
+set :repository,  "git@github.com:CCI-Studios/ProMotion-Ads.git"
 set :scm, :git
 
 # ssh settings
-set :user, "USERNAME"
+set :user, "pmads"
 set :use_sudo, false
 
 # Joomla
