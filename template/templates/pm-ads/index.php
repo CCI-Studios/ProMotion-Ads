@@ -55,24 +55,24 @@ JHtml::_('behavior.mootools');
 
 <body class="<?= $menu ?>">
 
-	<div id="wrapper" class="hfeed">
-		<div id="top" class="clearfix">
+	<div id="wrapper">
+		<div id="top">
 			<jdoc:include type="modules" name="header" style="xhtml" />
 			<br class="clearfix" />
 		</div>
 
-		<div id="masthead" class="clearfix">
+		<div id="masthead">
 			<jdoc:include type="modules" name="masthead" style="xhtml" />
 			<br class="clearfix" />
 		</div>
 
 		
-		<div id="post-content" class="clearfix">
+		<div id="post-content">
 			<jdoc:include type="component" />
 			<br class="clearfix" />
 		</div>
 
-		<div id="bottom" class="clearfix">
+		<div id="bottom">
 			<jdoc:include type="modules" name="bottom" style="xhtml" />
 			<br class="clearfix" />
 		</div>
