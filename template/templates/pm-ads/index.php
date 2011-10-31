@@ -57,19 +57,23 @@ $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 	<div id="wrapper" class="hfeed">
 		<div id="top" class="clearfix">
 			<jdoc:include type="modules" name="header" style="xhtml" />
+			<br class="clearfix" />
 		</div>
 
 		<div id="masthead" class="clearfix">
 			<jdoc:include type="modules" name="masthead" style="xhtml" />
+			<br class="clearfix" />
 		</div>
 
 		
 		<div id="post-content" class="clearfix">
 			<jdoc:include type="component" />
+			<br class="clearfix" />
 		</div>
 
 		<div id="bottom" class="clearfix">
 			<jdoc:include type="modules" name="bottom" style="xhtml" />
+			<br class="clearfix" />
 		</div>
 
 		<div id="footer">
@@ -78,7 +82,10 @@ $analytics = "UA-XXXXX-X"; // FIXME Update to client ID
 
 			<div class="right">
 				<jdoc:include type="modules" name="footer" style="xhtml" />
+				<br class="clearfix" />
 			</div>
+			
+			<br class="clearfix" />
 		</div>
 	</div>
 
