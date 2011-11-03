@@ -70,8 +70,7 @@ JHtml::_('behavior.mootools');
 			<div class="clear"></div>
 		</div>
 
-		
-		<div id="post-content">
+		<div id="component">
 			<jdoc:include type="component" />
 			<div class="clear"></div>
 		</div>

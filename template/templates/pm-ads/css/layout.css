@@ -24,10 +24,10 @@
 
 #content {}
 
-#post-content {
 	border-bottom: 1px solid #DEDEDE;
 	margin: 20px 0 33px;
 	padding: 0 0 12px;
+#component {
 }
 
 #bottom {
