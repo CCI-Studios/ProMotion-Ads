@@ -97,3 +97,23 @@
 }
 /* @end */
 
+#bottom .moduletable {
+	background: url(../images/bottom_bg.png) center bottom no-repeat;
+	float: left;
+	list-style: none;
+	margin-left: 10px;
+	min-height: 200px;
+	padding: 0 20px 20px;
+	width: 435px;
+}
+#bottom .moduletable:first-child {
+	margin-left: 0;
+}
+
+#bottom .moduletable h3 {
+	border: none;
+	color: #25aae1;
+	font-size: 18px;
+	line-height: 30px;
+}
+
