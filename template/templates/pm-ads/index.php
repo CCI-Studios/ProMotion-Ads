@@ -86,14 +86,13 @@ JHtml::_('behavior.mootools');
 		</div>
 
 		<div id="footer">
+			<div class="right">
+				<jdoc:include type="modules" name="footer" style="xhtml" />
+			</div>
+			
 			<div>&copy; Copyright <span class="blue">Pro</span> Motion <span class="blue">Ads</span> <?php print date('Y'); ?></div>
 			<div>Site By <a href="http://www.ccistudios.com" target="_blank">CCI Studios</a></div>
 
-			<div class="right">
-				<jdoc:include type="modules" name="footer" style="xhtml" />
-				<div class="clear"></div>
-			</div>
-			
 			<div class="clear"></div>
 		</div>
 	</div>
