@@ -24,14 +24,14 @@
 
 #content {}
 
-	border-bottom: 1px solid #DEDEDE;
-	margin: 20px 0 33px;
-	padding: 0 0 12px;
 #component {
+	margin: 20px 0 ;
 }
 
 #bottom {
-	
+	margin-bottom: 33px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #DEDEDE;
 }
 
 #bottom-menu {
