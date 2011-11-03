@@ -62,28 +62,28 @@ JHtml::_('behavior.mootools');
 	<div id="wrapper">
 		<div id="top">
 			<jdoc:include type="modules" name="header" style="xhtml" />
-			<br class="clearfix" />
+			<div class="clear"></div>
 		</div>
 
 		<div id="masthead">
 			<jdoc:include type="modules" name="masthead" style="xhtml" />
-			<br class="clearfix" />
+			<div class="clear"></div>
 		</div>
 
 		
 		<div id="post-content">
 			<jdoc:include type="component" />
-			<br class="clearfix" />
+			<div class="clear"></div>
 		</div>
 
 		<div id="bottom">
 			<jdoc:include type="modules" name="bottom" style="xhtml" />
-			<br class="clearfix" />
+			<div class="clear"></div>
 		</div>
 		
 		<div id="bottom-menu">
 			<jdoc:include type="modules" name="bottom-menu" style="xhtml" />
-			<br class="clearfix" />
+			<div class="clear"></div>
 		</div>
 
 		<div id="footer">
@@ -92,10 +92,10 @@ JHtml::_('behavior.mootools');
 
 			<div class="right">
 				<jdoc:include type="modules" name="footer" style="xhtml" />
-				<br class="clearfix" />
+				<div class="clear"></div>
 			</div>
 			
-			<br class="clearfix" />
+			<div class="clear"></div>
 		</div>
 	</div>
 
