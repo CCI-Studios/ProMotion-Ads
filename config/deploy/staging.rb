@@ -7,4 +7,4 @@ role :app, "pro-motionads.ca"
 # directories
 set :deploy_to, "/home/pmads/subdomains/dev"
 set :public, "#{deploy_to}/public_html"
-set :extensions, %w[public template]
+set :extensions, %w[public template com_contract]
