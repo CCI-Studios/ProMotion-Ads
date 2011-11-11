@@ -1,4 +1,4 @@
 <?php
 defined('KOOWA') or die;
 
-echo KService::get('com://admin/contracts.dispatcher')->dispatch();
+echo KService::get('com://site/contracts.dispatcher')->dispatch();
