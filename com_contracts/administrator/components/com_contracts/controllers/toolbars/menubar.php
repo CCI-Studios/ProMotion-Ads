@@ -20,10 +20,10 @@ class ComContractsControllerToolbarMenubar extends ComDefaultControllerToolbarMe
 			'active' => ($name == 'contract')
 	    ));
         
-        $this->addCommand('Advertisers', array(
+        /*$this->addCommand('Advertisers', array(
         	'href' => JRoute::_('index.php?option=com_contracts&view=advertisers'),
 			'active' => ($name == 'advertiser')
-        ));
+        ));*/
          
         return parent::getCommands();
     }

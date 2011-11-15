@@ -4,7 +4,7 @@
 
 <?= @helper('behavior.mootools'); ?>
 <?= @helper('behavior.keepalive'); ?>
-<?= @helper('behavior.validator') ?>
+<?= @helper('behavior.validator'); ?>
 
 <form action="<?= @route('id='. $campaign->id) ?>" method="post" class="-koowa-form" id="edit-form">
 	<div class="width-60 fltlft">

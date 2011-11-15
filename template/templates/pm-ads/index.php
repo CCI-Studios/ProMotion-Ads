@@ -71,6 +71,7 @@ JHtml::_('behavior.mootools');
 		</div>
 
 		<div id="component">
+			<jdoc:include type="message" />
 			<jdoc:include type="component" />
 			<div class="clear"></div>
 		</div>

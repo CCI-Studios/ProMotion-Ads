@@ -5,11 +5,19 @@ class ComContractsControllerBehaviorExecutable extends ComDefaultControllerBehav
 	
 	public function canAdd()
 	{
-		if ($this->getMixer()->getIdentifier()->name == 'driver') {
+		if (in_array($this->getMixer()->getIdentifier()->name, array('driver'))) {
 			return true;
 		} else {
-			return parent::getAdd();
+			return parent::canAdd();
 		}
 	}
 	
+	public function canEdit()
+	{
+		if (in_array($this->getMixer()->getIdentifier()->name, array('contract'))) {
+			return true;
+		} else {
+			return parent::canEdit();
+		}
+	}	
 }
