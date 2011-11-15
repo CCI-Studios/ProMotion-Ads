@@ -9,8 +9,8 @@
 		<thead>
 			<tr>
 				<th width="25">&nbsp;</th>
-				<th><?= @helper('grid.sort', array('column' => 'title'))?>
-				<th width="25"><?= @text('id') ?></th>
+				<th><?= @helper('grid.sort', array('column' => 'name'))?></th>
+				<th width="25"><?= @text('id'); ?></th>
 			</tr>
 		</thead>
 		
@@ -23,13 +23,13 @@
 		</tfoot>
 		
 		<tbody>
-			<? foreach($campaigns as $campaign): ?>
+			<? foreach($drivers as $driver): ?>
 			<tr>
-				<td align="center"><?= @helper('grid.checkbox', array('row' => $campaign)) ?></td>
-				<td><a href="<?= @route('view=campaign&id='. $campaign->id)?>">
-					<?= $campaign->title ?>
+				<td align="center"><?= @helper('grid.checkbox', array('row' => $driver)); ?></td>
+				<td><a href="<?= @route('view=driver&id='. $driver->id)?>">
+					<?= $driver->name ?>
 				</a></td>
-				<td align="center"><?= $campaign->id ?></td>
+				<td align="center"><?= $driver->id ?></td>
 			</tr>
 			<? endforeach; ?>
 		</tbody>

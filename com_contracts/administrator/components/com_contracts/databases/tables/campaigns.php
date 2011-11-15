@@ -1,7 +1,7 @@
 <?php
 defined('KOOWA') or die;
 
-class ComContractsDatabaseTableCampaign extends KDatabaseTableAbstract
+class ComContractsDatabaseTableCampaigns extends KDatabaseTableAbstract
 {
 	
 	protected function _initialize(KConfig $config)
@@ -10,7 +10,7 @@ class ComContractsDatabaseTableCampaign extends KDatabaseTableAbstract
 			'filters'	=> array(
 				'description'	=> array('html', 'tidy')
 			)
-		))
+		));
 		
 		parent::_initialize($config);
 	}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>	
+	<fieldset name="basic" label="basic" description="">
+		<field type="text" name="notification_email" default="" label="Notification Email" />
+	</fieldset>
+</config>

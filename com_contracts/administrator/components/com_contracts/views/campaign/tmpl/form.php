@@ -2,6 +2,7 @@
 <script src="media://lib_koowa/js/koowa.js" />
 <style src="media://lib_koowa/css/koowa.css" />
 
+<?= @helper('behavior.mootools'); ?>
 <?= @helper('behavior.keepalive'); ?>
 <?= @helper('behavior.validator') ?>
 
@@ -23,6 +24,19 @@
 			<div class="clr"></div>
 			<?= @editor(array('buttons' => null)) ?>
 		</fieldset>
+	</div>
+	
+	<div class="width-40 fltlft">
+		<div>
+			<h3>Available Variables</h3>
+			<p>Use the variables below to automatically insert text into the contract. Variable name must be surrounded with {{ }} to work. eg {{first_name}}.</p>
+	
+			<ul>
+				<? foreach ($driver_variables as $var): ?>
+					<li><?= $var ?></li>
+				<? endforeach; ?>
+			</ul>
+		</div>
 	</div>
 </form>
 			
