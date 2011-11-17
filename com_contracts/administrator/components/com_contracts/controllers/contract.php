@@ -19,7 +19,7 @@ class ComContractsControllerContract extends ComDefaultControllerDefault
 		$campaign = $this->getService('com://admin/contracts.model.campaign')->set('id', $contract->contracts_campaign_id)->getItem();
 		$details = $campaign->render_contents($driver);
 		$link = '<p>Click <a href="'. JURI::root().'index.php?option=com_contracts&view=contract&id='.$contract->id.'&password='.$contract->password
-				.'" target="_blank">here</a> to sign your contract.</p>';
+				.'" target="_blank">here</a> to accept or decline your contract.</p>';
 		
 		$config =& JFactory::getConfig();
 		$mailer =& JFactory::getMailer();
