@@ -1,7 +1,7 @@
 <?php
 defined('_JEXEC') or die('Direct Access to this location is not allowed.');
 
-$image_path = 'images/galleries/'. $params->get('image_path');
+$image_path = 'images/galleries/'. $params->get('image_path') .'/';
 $images = JFolder::files($image_path);
 
 $document = &JFactory::getDocument();

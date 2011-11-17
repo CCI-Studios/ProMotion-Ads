@@ -1,116 +1,55 @@
-.slideshow {
-	padding-bottom: 35px;
-	background: url(./shadow.png) bottom no-repeat;
-	font-size: 12px;
-	padding-top:10px;
+.mod_slideshow {
 }
 
-.ie7 .slideshow,
-.ie8 .slideshow {
-	padding-top:20px;
-}
+.mod_slideshow .images { display: none; }
 
-.slideshow > div { /*FIXME Background Image is working but will not display properly*/
-	padding: 1px;
-	border-radius: 10px;
-	background: url('slideshow_bg.jpg') center top no-repeat;
-	behavior: url(templates/RunStrong/resources/PIE.htc);
-}
-.slideshow > div > div {
+.mod_slideshow .slides {
 	position: relative;
-	padding: 50px 60px;
-}
-
-.slideshow h3 {
-	font-size: 30px;
-	color: #ec008c;
-	text-shadow: 0 -1px 1px #d7d7d7;
-	margin-top: 0;
-}
-
-.slideshow .description {
-	width: 50%;
-}
-
-.slideshow .prettylink {
-	display: inline-block;
-	*display: inline-block;
-	*zoom: 1;
-	margin-top: 25px;
-}
-
-.slideshow .selector {
-	position: absolute;
-	bottom: -17px;
-	left: 0;
-	width: 100%;
-	z-index: 3;
-	
 	text-align: center;
 }
 
-.slideshow .selector ul {
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
-	margin: 0;
-	padding: 0;
-	height: 20px;
-	padding: 5px 7px;
-	border-radius: 17px;
-	
-	border: 1px solid #ccc;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#cfcfcf), to(#fff));
-	background-image: -webkit-linear-gradient(bottom, #cfcfcf, #e6e6e6 2px, #f8f8f8 17px, #fff);
-	background-image: -moz-linear-gradient(bottom, #cfcfcf, #e6e6e6 2px, #f8f8f8 17px, #fff);
-	background-image: -o-linear-gradient(bottom, #cfcfcf, #e6e6e6 2px, #f8f8f8 17px, #fff);
-	background-image: -ms-linear-gradient(bottom, #cfcfcf, #e6e6e6 2px, #f8f8f8 17px, #fff);
-	background-image: linear-gradient(bottom, #cfcfcf, #e6e6e6 2px, #f8f8f8 17px, #fff);
-	-pie-background: linear-gradient(bottom, #cfcfcf, #e6e6e6 2px, #f8f8f8 17px, #fff);
-	box-shadow: 0 2px 2px #888;
-	behavior: url(templates/RunStrong/resources/PIE.htc);
-}
-
-.slideshow .selector li {
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
-	width: 20px;
-	height: 20px;
-	margin: 0 3px;
-	border-radius: 10px;
-	box-shadow: inset 1px 2px 1px 0 #333;
-	behavior: url(templates/RunStrong/resources/PIE.htc);
-	cursor: pointer;
-	background: white;
-}
-
-.ie7 .slideshow .selector li,
-.ie8 .slideshow .selector li {
-	background: url('pinkDot_holder.png') no-repeat center top;
-}
-
-.slideshow .selector li.current {
-	background: url('pinkDot.png') no-repeat center top;
-}
-
-.slideshow .images { display: none; }
-
-.slideshow .bg-image1,
-.slideshow .bg-image2 {
+.mod_slideshow .slides .slide {
 	width: 100%;
-	height: 100%;
+}
+
+.mod_slideshow .slides .slide + .slide {
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 1;
-	border-radius: 10px;
-	behavior: url(templates/RunStrong/resources/PIE.htc);
-}
-
-.slideshow .bg-image2 { opacity: 0; }
-
-.slideshow .stuff {
-	position: relative;
 	z-index: 2;
 }
+
+.mod_slideshow .slides img {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+
+	border-radius: 5px;
+}
+
+.mod_slideshow .slides .slide:first-child img { box-shadow: 0 0 10px #333; }
+.mod_slideshow .slides .slide + .slide img { opacity: 0; }
+
+.mod_slideshow .selector {
+	margin-top: 5px;
+	text-align: center;
+}
+
+.mod_slideshow .selector > div {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+.mod_slideshow .selector > div > div {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 10px;
+	height: 10px;
+	margin: 0px;
+	
+	background: url(../images/bullets.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+.mod_slideshow .selector > div > div.active { background-position: -10px 0; }
