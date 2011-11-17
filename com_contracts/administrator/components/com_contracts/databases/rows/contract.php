@@ -2,8 +2,6 @@
 
 class ComContractsDatabaseRowContract extends KDatabaseRowDefault
 {
-	
-
 	public function save()
 	{
 		if ($this->password === '') {

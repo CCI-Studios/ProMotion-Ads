@@ -3,10 +3,9 @@
 class ComContractsControllerContract extends ComDefaultControllerDefault
 {
 	
-	protected function _actionEdit(KCommandContext $command)
+	protected function _actionAdd(KCommandContext $command)
 	{
-		$result = parent::_actionEdit($command);
-	
+		$result = parent::_actionAdd($command);
 		$this->_emailContract();
 		
 		return $result;

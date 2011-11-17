@@ -1,5 +1,6 @@
 <?php defined('KOOWA') or die; ?>
 <script src="media://lib_koowa/js/koowa.js" />
+
 <?= @helper('behavior.keepalive'); ?>
 <?= @helper('behavior.validator') ?>
 

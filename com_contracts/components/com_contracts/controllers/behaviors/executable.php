@@ -5,7 +5,7 @@ class ComContractsControllerBehaviorExecutable extends ComDefaultControllerBehav
 	
 	public function canAdd()
 	{
-		if (in_array($this->getMixer()->getIdentifier()->name, array('driver'))) {
+		if (in_array($this->getMixer()->getIdentifier()->name, array('driver', 'advertiser'))) {
 			return true;
 		} else {
 			return parent::canAdd();

@@ -80,3 +80,15 @@ input[type=password], select, textarea {
     padding: 4px 5px;
     width: 300px;
 }
+
+input[type=text].validation-failed, input[type=email].validation-failed,
+input[type=password].validation-failed, select.validation-failed, textarea.validation-failed {
+	border-color: #d33;
+}
+
+.validation-advice {
+	color: #d33;
+	padding: 5px 10px;
+	display: inline-block !important;
+	margin: 0 0 0 0.5em;
+}
