@@ -1,3 +1,3 @@
 <h1>Thanks</h1>
 
-<p>Thank you for submitting your details. We will be in contact with you.</p>
+<p>Thank you for submitting your request, we will contact you shortly.</p>

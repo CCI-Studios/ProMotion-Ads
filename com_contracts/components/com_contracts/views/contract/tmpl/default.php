@@ -10,7 +10,7 @@
 
 
 <form action="<?= @route('id='.$contract->id) ?>" method="post" class="-koowa-form">
-	<p>Would you like to accept the terms of the contract?</p>
+	<p>Do you accept the terms of the contract?</p>
 
 	<div>
 		<select name="signed" style="width: 100px;">
