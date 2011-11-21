@@ -3,12 +3,10 @@
 class ComContractsControllerContract extends ComDefaultControllerDefault
 {
 	
-	protected function _actionAdd(KCommandContext $command)
-	{
-		$result = parent::_actionAdd($command);
+	protected function _actionSendContract(KCommandContext $command)
+	{		
 		$this->_emailContract();
-		
-		return $result;
+		$this->_redirect_message = "Contract has been successfully sent";
 	}
 	
 	protected function _emailContract()
@@ -20,7 +18,7 @@ class ComContractsControllerContract extends ComDefaultControllerDefault
 		$details = $campaign->render_contents($driver);
 		$link = '<p>Click <a href="'. JURI::root().'index.php?option=com_contracts&view=contract&id='.$contract->id.'&password='.$contract->password
 				.'" target="_blank">here</a> to accept or decline your contract.</p>';
-		
+	
 		$config =& JFactory::getConfig();
 		$mailer =& JFactory::getMailer();
 		$mailer->setSender(array($config->getValue('config.mailfrom'),$config->getValue('config.fromname')));
@@ -28,7 +26,7 @@ class ComContractsControllerContract extends ComDefaultControllerDefault
 		$mailer->setSubject('Contract details for Pro-Motion Ads');
 		$mailer->setBody($details . $link);
 		$mailer->isHTML(true);
-		
+	
 		$mailer->send();
 	}
 	
