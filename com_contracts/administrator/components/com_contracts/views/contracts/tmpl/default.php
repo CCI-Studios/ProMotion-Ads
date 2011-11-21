@@ -8,7 +8,7 @@
 	<table class="adminlist">
 		<thead>
 			<tr>
-				<th width="25">&nbsp;</th>
+				<th width="25"><?= @helper('grid.checkall')?></th>
 				<th><?= @helper('grid.sort', array('column' => 'driver_name', 'title' => 'Driver Name')) ?></th>
 				<th><?= @helper('grid.sort', array('column' => 'campaign_title', 'title' => 'Campaign Name')) ?></th>
 				<th width="50"><?= @helper('grid.sort', array('column' => 'enabled')) ?></th>
